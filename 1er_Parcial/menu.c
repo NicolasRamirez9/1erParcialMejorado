@@ -368,8 +368,9 @@ int funcionMenu(void)
                         informeC(eOrquesta, eMusico, ORQUESTA, MUSICOS);
                         break;
 
-      //              case 4:
-        //                break;
+                    case 4:
+                        informeD(eOrquesta, eInstrumento, eMusico, ORQUESTA, INSTRUMENTO, MUSICOS);
+                        break;
 
           //          case 5:
             //            break;

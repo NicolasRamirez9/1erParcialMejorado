@@ -297,3 +297,82 @@
 	"instrumento.h"
 	"validaciones.h"
 
+1558927983 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"validaciones.h"
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\orquesta.h
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\musico.h
+	"instrumento.h"
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\instrumento.h
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\validaciones.h
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"validaciones.h"
+	"menu.h"
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\menu.h
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"orquesta.h"
+	"validaciones.h"
+	"musico.h"
+	"instrumento.h"
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"validaciones.h"
+	"informes.h"
+
+1558918380 c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.h
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"validaciones.h"
+	"menu.h"
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"validaciones.h"
+
+1558918380 source:c:\users\temp\desktop\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"validaciones.h"
+

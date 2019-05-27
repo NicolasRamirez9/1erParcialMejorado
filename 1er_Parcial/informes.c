@@ -80,23 +80,43 @@ void informeC(Orquesta *eOrquesta, Musico *eMusico, int cantUno, int cantDos)
 
     for(i=0; i<cantUno; i++)
     {
-        contadorMus = 0;
         for(j=0; j<cantDos; j++)
         {
-            if(eMusico[i].isEmpty == LLENO && eMusico[i].idOrquesta == eOrquesta[j].idOrquesta)
+            if(eOrquesta[i].isEmpty == LLENO && eOrquesta[i].idOrquesta == eMusico[j].idOrquesta)
             {
                 contadorMus ++;
             }
         }
-        for(k=0; k<cantDos; k++)
+    }
+    for(k=0; k<cantUno; k++)
+    {
+        if(contadorMus < 6 && eOrquesta[k].isEmpty == LLENO)
         {
-            if(contadorMus > 6)
-            {
-                printf("\n ID de la orquesta: %d", eOrquesta[i].idOrquesta);
-                printf("\n Nombre de la orquesta: %s", eOrquesta[i].nombreOrquesta);
-                printf("\n Tipo de orquesta: %d", eOrquesta[i].tipoOrquesta);
-                printf("\n Lugar de la orquesta: %s \n", eOrquesta[i].lugar);
-            }
+            printf("\n ID de la orquesta: %d", eOrquesta[k].idOrquesta);
+            printf("\n Nombre de la orquesta: %s", eOrquesta[k].nombreOrquesta);
+            printf("\n Tipo de orquesta: %d", eOrquesta[k].tipoOrquesta);
+            printf("\n Lugar de la orquesta: %s \n", eOrquesta[k].lugar);
+        }
+    }
+}
+void informeD(Orquesta *eOrquesta,
+              Instrumento *eInstrumento,
+              Musico *eMusico,
+              int cantUno,
+              int cantDos,
+              int cantTres)
+{
+    int i;
+    int j;
+    int k;
+
+    for (i=0; i<cantUno; i++)
+    {
+        if ()
+        {
+            printf("\n Nombre del instrumento: %s", eInstrumento[k].nombreInstrumento);
+            printf("\n Tipo de instrumento: %d", eInstrumento[k].tipoInstrumento);
+            printf("\n Nombre del musico que toca el instrumento: %d", eMusico[k].nombreMusico);
         }
     }
 }
