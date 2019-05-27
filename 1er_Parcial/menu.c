@@ -353,6 +353,7 @@ int funcionMenu(void)
 
                     printf("\n Elija una opcion: ");
                     scanf("%d", &report);
+                    system("cls");///system("clear");
 
                     switch(report)
                     {
@@ -369,11 +370,12 @@ int funcionMenu(void)
                         break;
 
                     case 4:
-                        informeD(eOrquesta, eInstrumento, eMusico, ORQUESTA, INSTRUMENTO, MUSICOS);
+                        informeD(eOrquesta, eMusico, eInstrumento, ORQUESTA, MUSICOS, INSTRUMENTO);
                         break;
 
-          //          case 5:
-            //            break;
+                    case 5:
+                        informeE(eOrquesta, eMusico, eInstrumento, ORQUESTA, MUSICOS, INSTRUMENTO);
+                        break;
 
               //      case 6:
                 //        break;

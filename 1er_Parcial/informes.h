@@ -18,8 +18,8 @@ void informeA(Orquesta *eOrquesta, int cant);
  * \return
  */
 void informeB(Musico *eMusico,
-              Orquesta *eOrquesta,
               Instrumento *eInstrumento,
+              Orquesta *eOrquesta,
               int cantUno,
               int cantDos,
               int cantTres);
@@ -27,24 +27,39 @@ void informeB(Musico *eMusico,
 /**\brief Listar las orquestas con menos de 6 musicos
  *\param eOrquesta Orquesta*
  *\param eMusico Musico*
- *\param cant int
+ *\param cantUno int
+ *\param cantDos int
  * \return
  */
 void informeC(Orquesta *eOrquesta, Musico *eMusico, int cantUno, int cantDos);
 
 /**\brief Listar todos los instrumentos de una orquesta determinada
- *\param
- *\param
+ *\param eOrquesta Orquesta*
+ *\param eMusico Musico*
+ *\param eInstrumento Instrumento*
+ *\param cantUno int
+ *\param cantDos int
+ *\param cantTres int
  * \return
  */
-void informeD(Orquesta *eOrquesta, int cant);
+void informeD(Orquesta *eOrquesta,
+              Musico *eMusico,
+              Instrumento *eInstrumento,
+              int cantUno,
+              int cantDos,
+              int cantTres);
 
 /**\brief Listar las orquestas completas
  *\param
  *\param
  * \return
  */
-void informeE(Orquesta *eOrquesta, int cant);
+void informeE(Orquesta *eOrquesta,
+              Musico *eMusico,
+              Instrumento *eInstrumento,
+              int cantUno,
+              int cantDos,
+              int cantTres);
 
 /**\brief Imprimir la orquesta con menos musicos
  *\param

@@ -130,10 +130,6 @@ int imprimirInstrumentos(Instrumento *eInstrumento,int cant)
                 printf("\n Percusion:%d", eInstrumento[i].tipoInstrumento);
                 printf("\n ID del instrumento:%d \n", eInstrumento[i].idInstrumento);
             }
-            else
-            {
-                printf("\n Ingrese una opcion correcta. \n");
-            }
         }
     }
 }

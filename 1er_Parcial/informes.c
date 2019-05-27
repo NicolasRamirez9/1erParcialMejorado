@@ -100,8 +100,8 @@ void informeC(Orquesta *eOrquesta, Musico *eMusico, int cantUno, int cantDos)
     }
 }
 void informeD(Orquesta *eOrquesta,
-              Instrumento *eInstrumento,
               Musico *eMusico,
+              Instrumento *eInstrumento,
               int cantUno,
               int cantDos,
               int cantTres)
@@ -109,14 +109,109 @@ void informeD(Orquesta *eOrquesta,
     int i;
     int j;
     int k;
+    char idOrq[50];
+    int auxId;
+
+    getInt("\n Ingrese ID de la orquesta a la que quiere listar sus instrumentos: ",
+           "\n Error, vuelva a intentar.",
+           0,
+           20,
+           1,
+           idOrq);
+    auxId = atoi(idOrq);
+
+    for(i=0; i<cantUno; i++)
+    {
+        if(eOrquesta[i].isEmpty == LLENO &&
+           auxId == eOrquesta[i].idOrquesta)
+        {
+            for(j=0; j<cantDos; j++)
+            {
+                if(eMusico[j].isEmpty == LLENO &&
+                   eMusico[j].idOrquesta == eOrquesta[i].idOrquesta)
+                {
+                    printf("\n Nombre del musico que toca el instrumento: %s", eMusico[j].nombreMusico);
+
+                    for(k=0; k<cantTres; k++)
+                    {
+                        if (eInstrumento[k].isEmpty == LLENO &&
+                            eMusico[j].idInstrumento == eInstrumento[k].idInstrumento)
+                        {
+                            printf("\n Nombre del instrumento: %s", eInstrumento[k].nombreInstrumento);
+                            printf("\n Tipo de instrumento: %d", eInstrumento[k].tipoInstrumento);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+void informeE(Orquesta *eOrquesta,
+              Musico *eMusico,
+              Instrumento *eInstrumento,
+              int cantUno,
+              int cantDos,
+              int cantTres)
+{
+    int i;
+    int j;
+    int k;
+    int z;
+    int contadorDeCuerdas = 0;
+    int contadorDeViento = 0;
+    int contadorDePercusion = 0;
 
     for (i=0; i<cantUno; i++)
     {
-        if ()
+        if(eOrquesta[i].isEmpty == LLENO)
         {
-            printf("\n Nombre del instrumento: %s", eInstrumento[k].nombreInstrumento);
-            printf("\n Tipo de instrumento: %d", eInstrumento[k].tipoInstrumento);
-            printf("\n Nombre del musico que toca el instrumento: %d", eMusico[k].nombreMusico);
+            for (j=0; j<cantDos; j++)
+            {
+                if(eMusico[j].isEmpty == LLENO && eMusico[j].idOrquesta == eOrquesta[i].idOrquesta)
+                {
+                    for (k=0; k<cantTres; k++)
+                    {
+                        if(eInstrumento[k].isEmpty == LLENO && eInstrumento[k].idInstrumento == eMusico[j].idInstrumento)
+                        {
+                            if(eInstrumento[k].tipoInstrumento == 1)
+                            {
+                                contadorDeCuerdas ++;
+                            }
+                            if(eInstrumento[k].tipoInstrumento == 2 || eInstrumento[k].tipoInstrumento == 3)
+                            {
+                                contadorDeViento ++;
+                            }
+                            if(eInstrumento[k].tipoInstrumento == 4)
+                            {
+                                contadorDePercusion ++;
+                            }
+                        }
+                    }
+                }
+            }
         }
+    }
+    for(z=0; z<cantUno; z++)
+    {
+        if(contadorDeCuerdas >= 4 && contadorDeViento >= 4 && contadorDePercusion >= 1)
+        {
+            printf("ID de la orquesta: %d", eOrquesta[z].idOrquesta);
+            printf("Nombre de orquesta: %s", eOrquesta[z].nombreOrquesta);
+            printf("Lugar de la orquesta: %s", eOrquesta[z].lugar);
+            printf("Tipo de orquesta: %d", eOrquesta[z].tipoOrquesta);
+            break;
+        }
+    }
+}
+
+void informeG(Orquesta *eOrquesta, Instrumento *eInstrumento, int cantUno, int cantDos)
+{
+    int i;
+    int j;
+
+    if()
+    {
+        printf()
     }
 }
