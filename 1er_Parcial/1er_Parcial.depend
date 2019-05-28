@@ -376,7 +376,7 @@
 	"orquesta.h"
 	"validaciones.h"
 
-1558983646 source:c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.c
+1558986030 source:c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -442,7 +442,7 @@
 	"orquesta.h"
 	"validaciones.h"
 
-1558983251 source:c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\menu.c
+1558985780 source:c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\menu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -453,5 +453,5 @@
 	"validaciones.h"
 	"informes.h"
 
-1558981036 c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.h
+1558985738 c:\users\e5eee78\desktop\nueva carpeta (3)\1erparcialmejorado-master\1erparcialmejorado-master\1er_parcial\informes.h
 

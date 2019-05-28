@@ -73,7 +73,7 @@ void informeF(Orquesta *eOrquesta, int cant);
  *\param
  * \return
  */
-void informeG(Orquesta *eOrquesta, int cant);
+void informeG(Musico *eMusico, Instrumento *eInstrumento, Orquesta *eOrquesta, int cantUno, int cantDos, int cantTres);
 
 /**\brief Listar los musicos que no toquen instrumentos de viento, ordenado por apellido
  *\param

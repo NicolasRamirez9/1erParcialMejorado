@@ -205,13 +205,36 @@ void informeE(Orquesta *eOrquesta,
     }
 }
 
-void informeG(Orquesta *eOrquesta, Instrumento *eInstrumento, int cantUno, int cantDos)
+void informeG(Musico *eMusico, Instrumento *eInstrumento, Orquesta *eOrquesta, int cantUno, int cantDos, int cantTres)
 {
     int i;
     int j;
+    int k;
+    int contadorInstrumento = 0;
+    float contadorOrquesta = 0;
+    float promedio = 0;
 
-    if()
-    {
-        printf()
-    }
+   for(i=0; i<cantUno; i++)
+   {
+       if(eMusico[i].isEmpty == LLENO)
+       {
+           for(j=0; j<cantDos; j++)
+           {
+                if(eInstrumento[j].isEmpty == LLENO && eInstrumento[j].idInstrumento == eMusico[i].idInstrumento)
+                {
+                    contadorInstrumento ++;
+                }
+           }
+       }
+
+   }
+   for(k=0; k<cantTres; k++)
+   {
+       if(eOrquesta[k].isEmpty == LLENO)
+       {
+           contadorOrquesta ++;
+       }
+   }
+   promedio = contadorOrquesta / contadorInstrumento;
+   printf("El promedio de instrumentos por orquesta es: %.2f", promedio);
 }
