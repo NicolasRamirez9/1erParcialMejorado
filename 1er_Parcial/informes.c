@@ -210,31 +210,31 @@ void informeG(Musico *eMusico, Instrumento *eInstrumento, Orquesta *eOrquesta, i
     int i;
     int j;
     int k;
-    int contadorInstrumento = 0;
-    float contadorOrquesta = 0;
-    float promedio = 0;
+    float contadorInstrumento = 0;
+    int contadorOrquesta = 0;
+    float promedio;
 
-   for(i=0; i<cantUno; i++)
-   {
-       if(eMusico[i].isEmpty == LLENO)
-       {
-           for(j=0; j<cantDos; j++)
-           {
-                if(eInstrumento[j].isEmpty == LLENO && eInstrumento[j].idInstrumento == eMusico[i].idInstrumento)
+    for(i=0; i<cantUno; i++)
+    {
+        if(eMusico[i].isEmpty == LLENO)
+        {
+            for(j=0; j<cantDos; j++)
+            {
+                if(eInstrumento[j].isEmpty == LLENO && eMusico[i].idInstrumento == eInstrumento[j].idInstrumento)
                 {
                     contadorInstrumento ++;
                 }
-           }
-       }
-
-   }
-   for(k=0; k<cantTres; k++)
-   {
-       if(eOrquesta[k].isEmpty == LLENO)
-       {
-           contadorOrquesta ++;
-       }
-   }
-   promedio = contadorOrquesta / contadorInstrumento;
-   printf("El promedio de instrumentos por orquesta es: %.2f", promedio);
+            }
+        }
+    }
+    for(k=0; k<cantTres; k++)
+    {
+        if(eOrquesta[k].isEmpty == LLENO)
+        {
+            contadorOrquesta ++;
+        }
+    }
+    promedio = contadorInstrumento / contadorOrquesta;
+    printf("El promedio de instrumentos por orquesta es: %.2f", promedio);
 }
+

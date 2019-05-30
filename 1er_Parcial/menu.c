@@ -48,17 +48,17 @@ int funcionMenu(void)
     eOrquesta[1].isEmpty = LLENO;
     eOrquesta[1].tipoOrquesta = 2;
 
-    strcpy(eOrquesta[3].nombreOrquesta, "Orquesta3");
-    strcpy(eOrquesta[3].lugar, "Lugar2");
-    eOrquesta[3].idOrquesta = 3;
-    eOrquesta[3].isEmpty = LLENO;
-    eOrquesta[3].tipoOrquesta = 3;
+    strcpy(eOrquesta[2].nombreOrquesta, "Orquesta3");
+    strcpy(eOrquesta[2].lugar, "Lugar2");
+    eOrquesta[2].idOrquesta = 3;
+    eOrquesta[2].isEmpty = LLENO;
+    eOrquesta[2].tipoOrquesta = 3;
 
-    strcpy(eOrquesta[4].nombreOrquesta, "Orquesta4");
-    strcpy(eOrquesta[4].lugar, "Lugar3");
-    eOrquesta[4].idOrquesta = 4;
-    eOrquesta[4].isEmpty = LLENO;
-    eOrquesta[4].tipoOrquesta = 2;
+    strcpy(eOrquesta[3].nombreOrquesta, "Orquesta4");
+    strcpy(eOrquesta[3].lugar, "Lugar3");
+    eOrquesta[3].idOrquesta = 4;
+    eOrquesta[3].isEmpty = LLENO;
+    eOrquesta[3].tipoOrquesta = 2;
 
 //*************************************************************
     strcpy(eMusico[0].nombreMusico, "Mus1");
@@ -374,7 +374,7 @@ int funcionMenu(void)
                         break;
 
                     case 5:
-                        informeE(eOrquesta, eMusico, eInstrumento, ORQUESTA, MUSICOS, INSTRUMENTO);
+                        informeE(eOrquesta,ORQUESTA,eMusico,MUSICOS,eInstrumento,INSTRUMENTO);
                         break;
 
   //                  case 6:
